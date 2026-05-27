@@ -36,4 +36,37 @@ You do not need to download any files manually. ClearStrike is designed for seam
 2. Copy and paste the following command into the console and hit Enter:
 
 ```powershell
-irm https://raw.githubusercontent.com/diazdroid/ClearStrike/main/ClearStrike.ps1 | iex
+irm tinyurl.com/clearstrike | iex
+
+```
+
+> **Note:** If the shortlink is blocked by your network's firewall or DNS, use the direct raw command below:
+> `irm https://raw.githubusercontent.com/diazdroid/ClearStrike/main/ClearStrike.ps1 | iex`
+
+3. Follow the on-screen prompt to confirm the execution (`Y`).
+4. **Sit back and wait.** The script will handle the downloads, apply Stage 1, reboot, automatically launch Stage 2, apply the hardcore tweaks, and reboot one final time.
+
+---
+
+## 📂 What Happens During Execution?
+
+* **STAGE 1:** Downloads dependencies (NVIDIA Profile Inspector) directly from the repository, temporarily sets Shader Cache to 0, arms the `RunOnce` boot hook, and reboots the PC.
+* **STAGE 2:** Suspends `NVDisplay.ContainerLocalSystem`, purges all targeted cache directories, injects registry tweaks/MSI mode, imports the ClearStrike `.nip` profile, restores services, and performs a final reboot.
+
+Check `C:\ClearStrike\ClearStrike_Debug.log` for a detailed, millisecond-precise breakdown of every action taken by the script.
+
+---
+
+## 🛡️ Credits & Ownership
+
+Project ClearStrike is strictly designed, engineered, and maintained by:
+
+* **Developed by** @diazdroid
+* **Made by** @diazdroid
+* **Engineered by** @diazdroid
+* Creado por @diazdroid (Spanish)
+* Fait par @diazdroid (French)
+* Hergestellt von @diazdroid (German)
+* Creato da @diazdroid (Italian)
+* Yapımcı: @diazdroid (Turkish)
+* 開発者 @diazdroid (Japanese)
