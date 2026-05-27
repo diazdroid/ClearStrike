@@ -36,4 +36,4 @@ You do not need to download any files manually. ClearStrike is designed for seam
 2. Copy and paste the following command into the console and hit Enter:
 
 ```powershell
-irm [https://raw.githubusercontent.com/diazdroid/ClearStrike/main/ClearStrike.ps1](https://raw.githubusercontent.com/diazdroid/ClearStrike/main/ClearStrike.ps1) | iex
+irm https://raw.githubusercontent.com/diazdroid/ClearStrike/main/ClearStrike.ps1 | iex
